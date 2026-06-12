@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] arr = new int[15];
+
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int a = sc.nextInt();
+
+        int pos = -1;
+
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == a) {
+                pos = i;
+                break;
+            }
+        }
+
+        if (pos != -1) {
+            System.out.println("6 is present in the array");
+        } else {
+            System.out.println("Element not found");
+        }
+
+        sc.close();
+    }
+}
