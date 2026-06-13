@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        TreeSet<Integer> set = new TreeSet<>();
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            set.add(sc.nextInt());
+        }
+        System.out.println("Sorted elements:");
+        System.out.println(set);
+    }
+}
