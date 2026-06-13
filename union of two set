@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+
+        System.out.print("Enter size of first set: ");
+        int n1 = sc.nextInt();
+
+        System.out.println("Enter elements of first set:");
+        for (int i = 0; i < n1; i++) {
+            set1.add(sc.nextInt());
+        }
+
+        System.out.print("Enter size of second set: ");
+        int n2 = sc.nextInt();
+
+        System.out.println("Enter elements of second set:");
+        for (int i = 0; i < n2; i++) {
+            set2.add(sc.nextInt());
+        }
+
+        Set<Integer> union = new HashSet<>(set1);
+        union.addAll(set2);
+
+        System.out.println("Union of two sets: " + union);
+    }
+}
